@@ -7,32 +7,62 @@
 	<link rel="stylesheet" href="style.css">
 	<script src="data.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/641/641813.png">
 	<title>Hyper Site</title>
 </head>
 <body>
 	<header>
-		<span id="logo"></span>
+		<img src="https://cdn-icons-png.flaticon.com/512/641/641813.png" id="logo">
 		<nav>
 			<ul>
-				<li id="men">Men</li>
-				<li id="women">Women</li>
-				<li id="kids">Kids</li>
-				<li id="sale">Sale</li>
+				<li id="men">
+               <span>Men</span>
+               <div id="data_men" class="data">
+                  <ul>
+                     
+                  </ul>
+               </div>
+            </li>
+				<li id="women">
+               <span>Women</span>
+               <div id="data_women" class="data">
+                  <ul>
+                     
+                  </ul>
+               </div>
+            </li>
+				<li id="kids">
+               <span>Kids</span>
+               <div id="data_kids" class="data">
+                  <ul>
+                     
+                  </ul>
+               </div>
+            </li>
 			</ul>
 		</nav>
 		<div>
-			<input type="search">
-			<span id="login"></span>
-			<span id="like_list"></span>
-            <span id="add_to_card"></span>
+      <img id="search" src="https://static.thenounproject.com/png/1055776-200.png">
+			<!-- <input type="search"> -->
+			<img id="login" src="https://cdn-icons-png.flaticon.com/512/747/747545.png">
+			<img id="like_list" src="https://cdn-icons-png.flaticon.com/512/58/58746.png">
+      <img src="images/add-to-cart.png" alt="" id="add_to_card">
 		</div>
 	</header>
 	<main>
 		<section id="main_section">
-			<video src="https://brand.assets.adidas.com/video/upload/q_auto,vc_auto,c_scale,w_0.5/video/upload/running-ss23-adizero-adiospro3-inspire-hp-tc-d_mo075r.mp4" loop autoplay muted style="width: 100%;">
-				
-			</video>
+         <img src="https://dailyshopping.com.au/wp-content/uploads/2023/03/MT-SHOPPING-OFF-PLATT.jpg" alt="">
 		</section>
+    <section id="find">
+       <div id="nothing_search">
+          <span id="text_nothing_search"></span>
+          <span id="text_small_nothing_search"></span>
+          <img src="https://static.wbstatic.net/i/v3/catalog/not-found.svg" alt="">
+       </div>
+       <div id="rec">
+
+       </div>
+    </section>
 	</main>
 <footer
           class="text-center text-lg-start text-white"

@@ -1,0 +1,8 @@
+<article>
+   <div class="product-card__wrapper">
+     <img src="https://basket-01.wb.ru/vol104/part10470/10470063/images/c246x328/1.jpg" alt="" class="img_article">
+      <span class="price">12 232 ₽</span>
+      <span class="name_autor">Hayk Antonyan</span>
+      <button>В корзину</button>
+    </div>
+</article>
