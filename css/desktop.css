@@ -1,0 +1,53 @@
+#text_nothing_search{
+	font-size: 30px;
+    font-weight: bold;
+    display: block;
+    overflow-wrap: break-word;
+}
+#search{
+    height: 50px;
+    top: 0px;
+    right: 50px;
+    width: calc(90% - 100px);
+    z-index: 100;
+}
+#search_img{
+    width: 30%;
+    min-width: 20px;
+    max-width: 25px;
+}
+#filter_div img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: auto;
+}
+#men:hover #data_men, #women:hover #data_women, #kids:hover #data_kids{
+    display: flex;
+    justify-content: space-between;
+}
+#filter_div>div{
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    display: grid;
+    width: 150px;
+    min-height: 150px;
+    height: auto;
+    background-color: rgb(231, 219, 219);
+    align-content: space-evenly;
+    border-radius: 20px;
+    border: 1px solid black;
+    z-index: 102;
+}
+#filter_div>div>div{
+    height: auto;
+    width: auto;
+}
+
+
+article:hover p{
+    word-wrap: break-word;
+    white-space: normal;
+}

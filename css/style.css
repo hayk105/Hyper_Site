@@ -15,6 +15,7 @@ header{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	position: relative;
 }
 header img, header .data>ul>li>ul>li, header span{
 	cursor: pointer;
@@ -33,21 +34,24 @@ header ul{
 	height: 100%;
 }
 #logo{
+	position: absolute;
+	left: 5%;
 	height: 100%;
 }
+
 header>nav>ul>li{
 	display: flex;
     align-content: center;
     flex-wrap: wrap;
 }
-#men:hover #data_men, #women:hover #data_women, #kids:hover #data_kids{
-	display: flex;
-	justify-content: space-between;
-}
+
 
 .data{
 	width: 100%;
-    background: red;
+	background-color: darkblue;
+    background-image: url("../images/background-image_menu.jpg");
+    background-size: cover;
+  	background-position: left center;
     position: absolute;
     height: auto;
     left: 0;
@@ -70,7 +74,6 @@ header span{
 }
 header div{
 	height: 100%;
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -84,11 +87,7 @@ header div img{
     min-width: 22px;
     max-width: 33px;
 }
-#search{
-	width: 30%;
-    min-width: 20px;
-    max-width: 25px;
-}
+
 .data ul li ul {
     display: flex;
     flex-direction: column;
@@ -96,8 +95,13 @@ header div img{
 .data ul li ul li{
 	margin-top: 10px;
 }
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
 
-
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 					/*main styles :)*/
 
@@ -108,23 +112,21 @@ header div img{
 #main_section>img{
  	width: 100%;
 }
-#text_nothing_search{
-	font-size: 30px;
-    font-weight: bold;
-    display: block;
-    overflow-wrap: break-word;
-}
+
 #rec{
 	display: flex;
     flex-wrap: wrap;
 }
 article{
-	width: calc(100%/4 - 32px);
+	width: calc(100%/5);
     margin: 0 16px 44px;
     position: relative;
     margin: 20px;
-    border: 1px solid black;
     min-width: 181px;
+	border-radius: 14px;
+    overflow: hidden;
+	box-shadow: 2px 6px 10px 0px;
+	height: max-content;
 }
 article div img{
 	display: block;
@@ -150,6 +152,43 @@ article button{
 }
 #find{
 	display: none;
+}
+form{
+	display: none;
+}
+#search{
+    position: absolute;
+    padding-left: 10px;
+    border-radius: 30px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate_div{
+	display: flex;
+    height: 3rem;
+	position: relative;
+	width: 100%;
+	flex-wrap: wrap;
+}
+.rate {
+    height: 46px;
+    padding: 0 10px;
+}
+.rate {
+    width:auto;
+    overflow:hidden;
+    /* white-space:nowrap; */
+    cursor:pointer;
+    font-size: clamp(1rem, 4vw, 2.5rem);
+    color: #deb217;
+}
+.about p{
+	/* word-wrap: break-word; */
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 					/* footer style */
