@@ -40,7 +40,7 @@ function search(text_php, callback) {
       text_php: text_php,
       type_get: 'search',
     },
-    url: 'http://localhost/Hyper_site/data.php',
+    url: '/hyper_site/php/data.php',
     success: function(result) {
       if (result.trim() !== '') {
         var result2 = ((result.replaceAll(`"`, "`")).replaceAll("'", `"`)).replaceAll("][", ",")
